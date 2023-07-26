@@ -19,7 +19,7 @@ def creditChecker(ccn):
     timeCard = [num * 2 if num * 2 < 10 else num * 2 - 9 for num in evenNum]
     return (sum(oddNum)+sum(timeCard))%10==0
     
-cc='5555 5555 5555 4444'
+cc='4012888888881881'
 valid = creditChecker(cc.replace(' ',''))
 company = getBIN(cc,valid)
 print(f'{cc}|{valid}|{company}')
